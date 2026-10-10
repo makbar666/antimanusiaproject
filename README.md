@@ -40,6 +40,16 @@ Fitur interaktif demo baru meliputi filter galeri, lightbox previous/next fotogr
 
 Import repository ke Vercel. Framework akan terdeteksi sebagai Next.js. Tidak ada database atau environment variable yang dibutuhkan.
 
+## Deployment ke Netlify
+
+Import repository yang sama ke Netlify dan gunakan pengaturan berikut:
+
+- Build command: `npm run build`
+- Publish directory: `.next`
+- Base directory: kosong
+
+File `netlify.toml` sudah menyertakan plugin Next.js agar App Router, route demo, dan route `/custom` tidak berakhir di halaman 404.
+
 ## Catatan konten
 
 Semua nama, pengalaman, proyek, sertifikasi, dan email pada halaman demo adalah data simulasi. Ganti sebelum halaman demo dipakai sebagai portfolio klien nyata.
