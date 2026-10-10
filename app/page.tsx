@@ -181,6 +181,7 @@ const heroSlides = [
   { name: "Atelier Ruang", role: "Arsitek", headline: "Space tells stories.", screen: "dark" as const },
   { name: "Dimas Pratama", role: "Sales / Marketing", headline: "Build trust. Grow well.", screen: "blue" as const },
 ];
+const heroSlideAccents = ["#bda67f", "#ee5b44", "#75d9d2", "#e7a66a", "#5b6ee1", "#e76f51", "#6d9b72", "#9a6f43", "#4f9aa3"];
 
 function HeroPreview({ activeSlide, setActiveSlide }: { activeSlide: number; setActiveSlide: (value: number | ((current: number) => number)) => void }) {
   const slide = heroSlides[activeSlide];
@@ -467,10 +468,10 @@ export default function HomePage() {
           <div className="absolute -bottom-1 right-0 w-[104px] md:w-[132px]">
             <div className="phone-shell">
               <div className="h-[8px] bg-[#1a1b1e]" />
-              <div className="screen-blue min-h-[175px] p-3">
+              <div className={`min-h-[175px] p-3 screen-${heroSlides[heroSlide].screen}`}>
                 <div className="mb-5 text-[7px] font-bold">{heroSlides[heroSlide].name.toUpperCase()}.</div>
                 <div className="mt-4 break-words text-[19px] font-semibold leading-[.9]">{heroSlides[heroSlide].headline}</div>
-                <div className="mt-12 h-1 w-8 bg-[#2c6cae]" />
+                <div className="mt-12 h-1 w-8" style={{ backgroundColor: heroSlideAccents[heroSlide] }} />
               </div>
             </div>
           </div>
