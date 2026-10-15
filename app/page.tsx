@@ -21,6 +21,7 @@ import {
   whatsappUrl,
   type DemoSlug,
 } from "@/lib/config";
+import InteractiveDemo from "@/components/interactive-demos";
 import {
   demoCategories,
   type InteractiveDemoSlug,
@@ -174,7 +175,7 @@ const heroSlides = [
   { name: "Arga Visuals", role: "Professional Photographer", headline: "Capturing moments, creating stories.", screen: "dark" as const },
   { name: "Nadia Creative", role: "Graphic Designer", headline: "Design that speaks louder.", screen: "lime" as const },
   { name: "Rizky Dev", role: "Full-Stack Web Developer", headline: "Building digital experiences.", screen: "blue" as const },
-  { name: "Karsa Motion", role: "Videographer", headline: "Every frame has a feeling.", screen: "dark" as const },
+  { name: "ANTI MANUSIA / PROJECT", role: "Videographer / Director / Visual Storyteller", headline: "Make it feel real.", screen: "dark" as const },
   { name: "Maya Interface", role: "UI/UX Designer", headline: "Making complex feel clear.", screen: "blue" as const },
   { name: "Sora Content", role: "Content Creator", headline: "Ideas made to travel.", screen: "lime" as const },
   { name: "Nala Growth", role: "Digital Marketer", headline: "Insight into momentum.", screen: "blue" as const },
@@ -364,7 +365,7 @@ function InteractiveCard({
   );
 }
 
-export default function HomePage() {
+function LegacyCatalogHomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -707,10 +708,14 @@ export default function HomePage() {
             <a className="footer-link" href="#faq">FAQ</a>
             <a className="footer-link" href={`mailto:${businessConfig.email}`}>Email</a>
             <a className="footer-link" href={whatsappUrl("Halo kak, saya ingin konsultasi membuat website portofolio.")} target="_blank" rel="noreferrer">WhatsApp</a>
-            <span>© {new Date().getFullYear()} pamerporto</span>
+            <span>© {new Date().getFullYear()} {businessConfig.brandName}</span>
           </div>
         </div>
       </footer>
     </main>
   );
+}
+
+export default function HomePage() {
+  return <InteractiveDemo slug="videografer" />;
 }

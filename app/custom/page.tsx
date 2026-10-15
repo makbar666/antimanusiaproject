@@ -31,7 +31,7 @@ const previewSlides = [
   { label: "Fotografer", name: "Arga Visuals", title: "Capturing moments.", color: "#8d735d" },
   { label: "Graphic Designer", name: "Nadia Creative", title: "Design speaks louder.", color: "#ed5b37" },
   { label: "Web Developer", name: "Rizky Dev", title: "Build useful things.", color: "#1e4258" },
-  { label: "Videografer", name: "Karsa Motion", title: "Every frame has a feeling.", color: "#9a6947" },
+  { label: "Videografer", name: "ANTI MANUSIA / PROJECT", title: "Make it feel real.", color: "#252525" },
   { label: "UI/UX Designer", name: "Maya Interface", title: "Make complex feel clear.", color: "#5b6ee1" },
   { label: "Content Creator", name: "Sora Content", title: "Ideas made to travel.", color: "#e76f51" },
   { label: "Digital Marketer", name: "Nala Growth", title: "Turn insight into momentum.", color: "#4f8b62" },

@@ -1,12 +1,14 @@
 export const businessConfig = {
-  brandName: "pamerporto",
-  brandMark: "pp/",
-  whatsappNumber: "085254099133",
-  email: "email-bisnis@contoh.com",
-  instagramUrl: "https://instagram.com/",
-  headline: "Portofolio website yang terasa seperti kamu.",
+  brandName: "ANTI MANUSIA PROJECT",
+  brandMark: "ANTI MANUSIA / PROJECT",
+  whatsappNumber: "081227814883",
+  email: "reydysta@gmail.com",
+  instagramUrl: "",
+  youtubeUrl: "",
+  tiktokUrl: "",
+  headline: "Visual stories for people who feel different.",
   serviceDescription:
-    "Kami membantu kamu menyusun profil, pengalaman, dan karya menjadi website yang siap dibagikan.",
+    "Videographer, director, dan visual storyteller untuk cerita yang ingin terasa jujur, berani, dan hidup.",
 };
 
 export type DemoSlug = "fresh-graduate" | "professional" | "creative";

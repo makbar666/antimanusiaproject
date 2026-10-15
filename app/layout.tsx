@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "pamerporto | Website portfolio yang terasa seperti kamu",
-  description: "Contoh website portfolio untuk personal branding, lamaran kerja, dan showcase karya.",
+  title: "ANTI MANUSIA PROJECT | Visual Storyteller",
+  description: "Portfolio Reydysta Pradana Krisna Mukti — videographer, director, dan visual storyteller.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

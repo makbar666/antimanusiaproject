@@ -1,6 +1,6 @@
-# pamerporto
+# ANTI MANUSIA PROJECT
 
-Showcase website untuk layanan pembuatan website portfolio. Project ini memakai Next.js App Router, TypeScript strict, Tailwind CSS, Lucide Icons, dan Framer Motion.
+Website portfolio client ANTI MANUSIA PROJECT untuk Reydysta Pradana Krisna Mukti. Project ini memakai Next.js App Router, TypeScript strict, Tailwind CSS, Lucide Icons, dan Framer Motion.
 
 ## Menjalankan secara lokal
 
@@ -14,6 +14,8 @@ Buka `http://localhost:3000`.
 Route yang tersedia:
 
 - `/`
+- `/resume`
+- `/reydysta-pradana-krisna-mukti-resume.pdf`
 - `/custom`
 - `/demo/fotografer`
 - `/demo/desainer`
@@ -32,13 +34,19 @@ Route yang tersedia:
 
 Edit `lib/config.ts` untuk mengganti nama brand, nomor WhatsApp, email, sosial media, dan copy layanan. Nomor WhatsApp disimpan dalam format lokal dan otomatis dinormalisasi ke format internasional saat CTA digunakan.
 
-Data katalog demo baru berada di `lib/interactive-demos.ts`. Layout fotografer, desainer, dan programmer dipisah, sementara lima kategori tambahan memakai layout showcase reusable dengan tema profesi masing-masing di `components/interactive-demos.tsx`.
+Konfigurasi client berada di `lib/config.ts`, sedangkan portfolio utama berada di route `/` dan `/demo/videografer`. File PDF resume tersimpan di `public/` agar dapat diunduh langsung dari Vercel.
 
 Fitur interaktif demo baru meliputi filter galeri, lightbox previous/next fotografer, filter dan detail proyek desainer, filter dan detail proyek programmer, navigasi internal, serta panel kontrol demo yang bisa disembunyikan.
 
 ## Deployment ke Vercel
 
-Import repository ke Vercel. Framework akan terdeteksi sebagai Next.js. Tidak ada database atau environment variable yang dibutuhkan.
+1. Push project ke repository GitHub, GitLab, atau Bitbucket.
+2. Import repository tersebut di Vercel.
+3. Pastikan Framework Preset terdeteksi sebagai `Next.js`.
+4. Gunakan Build Command `npm run build` dan biarkan Output Directory kosong.
+5. Klik Deploy.
+
+Project ini tidak membutuhkan database maupun environment variable. Setelah deploy, verifikasi route `/`, `/resume`, `/demo/videografer`, dan link PDF resume.
 
 ## Deployment ke Netlify
 
@@ -52,4 +60,4 @@ File `netlify.toml` sudah menyertakan plugin Next.js agar App Router, route demo
 
 ## Catatan konten
 
-Semua nama, pengalaman, proyek, sertifikasi, dan email pada halaman demo adalah data simulasi. Ganti sebelum halaman demo dipakai sebagai portfolio klien nyata.
+Detail project video yang belum diberikan ditampilkan sebagai status “Segera hadir”. Ganti data tersebut di `components/interactive-demos.tsx` setelah judul, kategori, tahun, deskripsi, link, dan thumbnail client tersedia.

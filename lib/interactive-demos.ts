@@ -29,10 +29,10 @@ export const interactiveDemoMeta: Record<InteractiveDemoSlug, { name: string; pe
     tag: "Technical premium",
   },
   videografer: {
-    name: "Videografer",
-    person: "Karsa Motion",
-    description: "Showreel, cerita, dan produksi video dalam satu pengalaman sinematik.",
-    tag: "Cinematic motion",
+    name: "Videographer",
+    person: "ANTI MANUSIA PROJECT",
+    description: "Portfolio video, visual storytelling, dan social media management dengan sudut pandang yang eksperimental.",
+    tag: "Dark cinematic",
   },
   "uiux-designer": {
     name: "UI/UX Designer",
