@@ -3,9 +3,10 @@ export const businessConfig = {
   brandMark: "ANTI MANUSIA / PROJECT",
   whatsappNumber: "081227814883",
   email: "reydysta@gmail.com",
-  instagramUrl: "",
+  instagramUrl: "https://instagram.com/antimanusia13",
   youtubeUrl: "",
-  tiktokUrl: "",
+  tiktokUrl: "https://tiktok.com/@reydysta",
+  linkedinUrl: "https://www.linkedin.com/in/reydysta-pradana-krisna-mukti/",
   headline: "Visual stories for people who feel different.",
   serviceDescription:
     "Videographer, director, dan visual storyteller untuk cerita yang ingin terasa jujur, berani, dan hidup.",
